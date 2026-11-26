@@ -1,31 +1,76 @@
 # Prasanna Baskaran — Developer Portfolio
 
-An editorial, responsive developer portfolio built with semantic HTML5, custom CSS (light & dark themes), and vanilla JavaScript.
+Personal portfolio website of **Prasanna Baskaran**, a **.NET Full Stack Developer & R&D Software Engineer** with 3+ years of experience building enterprise banking platforms, real-time industrial software, and scalable web applications.
 
-## Sections Included
-- **Hero & Engineering Overview:** Role summary, key metrics, and quick links to GitHub & LinkedIn
-- **About / Domain Pillars:** Enterprise Banking, Real-Time Industrial R&D, and Scalable APIs & Data Systems
-- **Experience Timeline:** Manatec Electronics, Tech Swing Solutions, and Revature India
-- **Filterable Projects Grid:** Filterable by Industrial & Desktop, Banking & APIs, and Web & IoT
-- **Technical Skills & Education:** Structured tech matrix and MCA (SASTRA University)
-- **Contact:** One-click copy email, phone, social profiles, and a zero-backend `mailto:` contact composer
+🔗 **Live Site:** [prasnnabaskaran.github.io/DeveloperPortfolio](https://prasnnabaskaran.github.io/DeveloperPortfolio/) *(update with your custom domain if configured)*
 
-## Resume Download Button
-The header, mobile menu, and hero section include a **Download Resume** button wired to `Prasanna_Baskaran_Resume.html` (which also includes a one-click **Print / Save as PDF** button). To serve your own PDF file directly instead, place `Prasanna_Baskaran_Resume.pdf` in this folder and update the `href` and `download` attributes in `index.html`.
+![Portfolio Preview](./assets/preview.svg)
 
-## Contact Form Delivery
-The **Send a Quick Message** form supports both:
-1. **Direct delivery to `prasanna4223@gmail.com`** via [FormSubmit](https://formsubmit.co/) (no backend server or API key needed). After deploying to GitHub Pages (or any `https://` host), submit one test message and click the one-time **Activate** link sent to `prasanna4223@gmail.com`—every message afterward lands straight in your inbox with `Reply-To` set to the sender.
-2. **Send via Gmail / Default Mail App:** One-click buttons below the submit button open a pre-filled draft in Gmail Web (`mail.google.com`) or the visitor's default email client (and automatically fall back to Gmail when previewed locally via `file://`).
+---
 
-## Preview Locally
-Open `index.html` directly in any modern browser, or run a local static server from this directory:
+## About & Key Highlights
+
+This portfolio showcases my professional experience across **Manatec Electronics** (industrial R&D), **Tech Swing Solutions** (enterprise banking), and **Revature India** (full-stack web), alongside featured projects and technical skills.
+
+- **Editorial Light & Dark Mode:** Smooth theme toggle persisted via `localStorage` and respecting `prefers-color-scheme`.
+- **Responsive Across Devices:** Clean CSS Grid and Flexbox layouts tuned for desktop, tablet, mobile drawer navigation, and print.
+- **Interactive Project Showcase:** Filterable project grid (*Industrial & Desktop*, *Banking & APIs*, *Web & IoT*) with direct source links.
+- **Direct Contact Form:** Sends client messages straight to `prasanna4223@gmail.com` via [FormSubmit](https://formsubmit.co/), with one-click **Open in Gmail**, **Default Mail App**, and **Copy Email** fallbacks.
+- **Downloadable Resume:** Built-in **Download Resume** buttons wired to a standalone, ATS-friendly, print-to-PDF resume page.
+- **Fast & Accessible:** Zero-dependency static build with semantic HTML5, skip links, `aria` attributes, scroll-spy navigation, and reduced-motion support.
+
+---
+
+## Tech Stack
+
+- **Markup:** Semantic HTML5
+- **Styling:** Custom CSS3 (CSS Custom Properties, Grid, Flexbox, Light/Dark themes, Print CSS)
+- **Interactivity:** Vanilla JavaScript (ES6+, `IntersectionObserver`, Clipboard API, Fetch API)
+- **Contact Delivery:** FormSubmit AJAX + Gmail Web / `mailto:` fallbacks
+- **Typography:** Plus Jakarta Sans, Instrument Serif, JetBrains Mono (Google Fonts with system fallbacks)
+- **Deployment:** GitHub Pages (zero build step)
+
+---
+
+## Running Locally
+
+No build tools, package installation, or `.env` API keys are required.
 
 ```bash
+git clone https://github.com/PrasnnaBaskaran/DeveloperPortfolio.git
+cd DeveloperPortfolio
 npx serve .
 ```
 
-## Deploy to GitHub Pages
-1. Push these files (`index.html`, `styles.css`, `script.js`, `README.md`) to your `DeveloperPortfolio` repository on GitHub.
-2. Go to **Repository Settings → Pages → Build and deployment**, select **Deploy from a branch** (`main` / root).
-3. Add your live URL to your GitHub profile sidebar and repository **About** section.
+Or open `index.html` directly in any modern browser.
+
+> **Contact Form Note:** When deployed to an `https://` host (such as GitHub Pages), submit one test message through the contact form and click the one-time **Activate** link sent to `prasanna4223@gmail.com` to enable direct inbox delivery.
+
+---
+
+## Folder Structure
+
+```text
+├── assets/
+│   └── preview.svg                # Portfolio preview graphic for GitHub README
+├── index.html                     # Single-page portfolio entry point & sections
+├── styles.css                     # Editorial design system, light/dark themes, responsive & print styles
+├── script.js                      # Theme toggle, project filters, scroll-spy, copy email & FormSubmit handler
+├── Prasanna_Baskaran_Resume.html  # Standalone ATS-friendly, print-to-PDF resume page
+└── README.md                      # Repository overview and documentation
+```
+
+### How the Files Connect
+- **`index.html`** loads **`styles.css`** and **`script.js`**, and links its header, hero, and mobile **Download Resume** buttons to **`Prasanna_Baskaran_Resume.html`**.
+- **`script.js`** controls interactive UI states (`data-theme`, `.is-active`, `.is-hidden`, `.is-visible`) styled by **`styles.css`** and routes contact form submissions to FormSubmit / Gmail / `mailto:`.
+- **`assets/preview.svg`** provides the visual preview displayed at the top of this **`README.md`**.
+
+---
+
+## License & Contact
+
+Licensed under the **MIT License**—feel free to use this layout as inspiration with attribution if you fork it.
+
+- **Email:** [prasanna4223@gmail.com](mailto:prasanna4223@gmail.com)
+- **LinkedIn:** [linkedin.com/in/prasannabaskaran](https://www.linkedin.com/in/prasannabaskaran/)
+- **GitHub:** [github.com/PrasnnaBaskaran](https://github.com/PrasnnaBaskaran)
